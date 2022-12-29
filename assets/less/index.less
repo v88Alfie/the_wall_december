@@ -1,0 +1,112 @@
+@import url("./global.less");
+
+body{
+    background-color: #2C2D34;
+    display: flex;
+
+    #container{
+        display: flex;
+        margin: auto;
+        padding-top: 210px;
+        width: 876px;
+
+        #form_section{
+            background-color: @dark_bg;
+            padding: 75px 78px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            width: 100%;
+
+            img{
+                margin-right: 30px;
+            }
+
+            .form_header{
+                margin-bottom: 50px;
+                display: inline-block;
+                vertical-align: center;
+
+                h1{
+                    color: @white;
+                    font: 21px/24px @font-regular;
+                    margin-bottom: 5px;
+                }
+
+                p{
+                    color: @font;
+                    font: 18px/20px @font-regular;
+                }
+            }
+
+            .name_form_group{
+                display: flex;
+                column-gap: 15px;
+            }
+
+            .form_group{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+
+                &.first_name_field,
+                &.last_name_field{
+                    width: 100%;
+                }
+
+                label{
+                    color: @font;
+                    font: 14px/16px @font-regular;
+                    margin-bottom: 10px;
+                }
+
+                input{
+                    background-color: @dark_grey;
+                    border-radius: 10px;
+                    border:none;
+                    color: @white;
+                    font: 16px/16.3px @font-regular;
+                    height: 60px;
+                    padding: 0 20px;
+                    outline: none;
+
+                    &:focus{
+                        border: 1px solid @blue;
+                    }
+                }
+            }
+
+            button[type="submit"]{
+                background-color: @blue;
+                border-radius: 9px;
+                border: none;
+                color: @white;
+                font: 21px/25px @font-bold;
+                height: 60px;
+                margin: 10px 0 40px 0;
+                width: 100%;
+            }
+
+            p {
+                color: @font;
+                font: 17.5px/21px @font-regular;
+                text-align: center;
+            }
+
+            a{
+                text-decoration: none;
+                font: 17.5px/21px @font-regular;
+                color: @blue;
+
+            }
+        }
+
+        .logo_container{
+            background: url(/assets/images/right_panel_bg.svg) no-repeat;
+            background-color: @dark_grey;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            padding: 75px 51px;
+            width: 205px;
+        }
+    }
+}

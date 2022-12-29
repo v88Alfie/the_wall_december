@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall</title>
+    <meta name="description" content="The Wall">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/wall.css">
+    <script src="/assets/js/wall.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/assets/images/the_wall_small_logo.svg" alt="the_wall">
+        <p>Alfie Osayan</p>
+        <a href="index.html"><span class="logout_icon"></span><span>Logout</span></a>
+    </header>
+    <div id="container">
+        <h2>Hello Alfie,</h2>
+        <p>Welcome to V88 Forum Dashboard</p>
+        <div id="topic_form_container">
+            <form action="#" method="post" autocomplete="off" id="create_post_form">
+                <textarea name="topic" id="topic_content" placeholder="Post your Topic..."></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+        <h3>Recent Forums</h3>
+        <div id="blank_topic_container" class="">
+            <p>No post yet.</p>
+        </div>
+        <ul id="topic_lists">
+            <li id="clone_topic_container" class="topic_container hidden">
+                <div class="topic_post">
+                    <p class="post_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum nec feugiat massa adipiscing. Sit at placerat nisi, sed lorem porttitor nulla aliquam fermentum. Mi curabitur consequat congue consectetur erat sed.</p>
+                    <div class="details_container">
+                        <p>Alfie Osayan <span>(few sec ago)</span></p>
+                        <span>|</span>
+                        <p class="responses">0 responses</p>
+                        <div class="action_group">
+                            <button type="button" class="edit_btn"></button>
+                            <button type="button" class="delete_btn"></button>
+                            <p class="confirm_text hidden">Confirm Delete? <button type="button" class="no_btn">No</button><button type="button" class="yes_btn">Yes</button></p>
+                        </div>
+                    </div>
+                    <div class="comment_form_container">
+                        <form action="#" method="post" autocomplete="off" class="comment_form">
+                            <textarea name="comment" class="comment" placeholder="Post your response..."></textarea>
+                            <button class="submit_comment_btn" type="button">Comment</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="comments_container hidden">
+                    <ul class="comment_lists">
+                        <li class="comment_content">
+                            <div class="edit_comment_form_container hidden">
+                                <form action="#" method="post" autocomplete="off" class="comment_form">
+                                    <textarea name="edit_comment" class="edit_comment" placeholder="Update your Response..."></textarea>
+                                    <button class="save_comment_btn" type="button">Save</button>
+                                </form>
+                            </div>
+                            <p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum nec feugiat massa adipiscing. Sit at placerat nisi, sed lorem porttitor nulla aliquam fermentum. Mi curabitur consequat congue consectetur erat sed.</p>
+                            <div class="details_container">
+                                <p>Alfie Osayan <span>(few sec ago)</span></p>
+                                <div class="action_group">
+                                    <button type="button" class="edit_comment_btn"></button>
+                                    <button type="button" class="delete_comment_btn"></button>
+                                    <p class="confirm_text hidden">Confirm Delete? <button type="button" class="no_comment_btn">No</button><button type="button" class="yes_comment_btn">Yes</button></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall | Login/Register</title>
+    <meta name="description" content="The Wall Sign in / Register">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <script src="/assets/js/index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <section id="form_section">
+            <img src="/assets/images/the_wall_icon.svg" alt="the_wall_icon">
+            <div class="form_header">
+                <h1>Welcome</h1>
+                <p>Login your account</p>
+            </div>
+            <form action="#" method="post" autocomplete="off" class="hidden" id="sign_up_form">
+                <div class="name_form_group">
+                    <div class="form_group first_name_field">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+                    <div class="form_group last_name_field">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                </div>
+                <div class="form_group">
+                    <label for="register_email">Email</label>
+                    <input type="text" name="email" id="register_email">
+                </div>
+                <div class="form_group">
+                    <label for="register_password">Password</label>
+                    <input type="password" name="password" id="register_password">
+                </div>
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#" id="show_sign_in_form">Login</a></p>
+            </form>
+            <form action="#" method="post" autocomplete="off" id="sign_in_form">
+                <div class="form_group">
+                    <label for="login_email">Email</label>
+                    <input type="text" name="email" id="login_email">
+                </div>
+                <div class="form_group">
+                    <label for="login_password">Password</label>
+                    <input type="password" name="password" id="login_password">
+                </div>
+                <button type="submit">Sign In</button>
+                <p>Don't have an account? <a href="#" id="show_sign_up_form">Sign Up</a></p>
+            </form>
+        </section>
+        <div class="logo_container">
+            <img src="/assets/images/the_wall_big_logo.svg" alt="the_wall_big_logo">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../fonts/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("../fonts/Roboto-Italic.ttf");
+}
+/* Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input,
+button,
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+}
+body ul {
+  list-style-type: none;
+}
+body .hidden {
+  display: none !important;
+}
+body .input_error {
+  border: 1px solid #eb5757 !important;
+}
+body button {
+  cursor: pointer;
+}
+body {
+  background-color: #2C2D34;
+  display: flex;
+}
+body #container {
+  display: flex;
+  margin: auto;
+  padding-top: 210px;
+  width: 876px;
+}
+body #container #form_section {
+  background-color: #1d1f2b;
+  padding: 75px 78px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100%;
+}
+body #container #form_section img {
+  margin-right: 30px;
+}
+body #container #form_section .form_header {
+  margin-bottom: 50px;
+  display: inline-block;
+  vertical-align: center;
+}
+body #container #form_section .form_header h1 {
+  color: #ffffff;
+  font: 21px/24px "Roboto-Regular";
+  margin-bottom: 5px;
+}
+body #container #form_section .form_header p {
+  color: #6d7186;
+  font: 18px/20px "Roboto-Regular";
+}
+body #container #form_section .name_form_group {
+  display: flex;
+  column-gap: 15px;
+}
+body #container #form_section .form_group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+body #container #form_section .form_group.first_name_field,
+body #container #form_section .form_group.last_name_field {
+  width: 100%;
+}
+body #container #form_section .form_group label {
+  color: #6d7186;
+  font: 14px/16px "Roboto-Regular";
+  margin-bottom: 10px;
+}
+body #container #form_section .form_group input {
+  background-color: #3b3c43;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font: 16px/16.3px "Roboto-Regular";
+  height: 60px;
+  padding: 0 20px;
+  outline: none;
+}
+body #container #form_section .form_group input:focus {
+  border: 1px solid #00a3ff;
+}
+body #container #form_section button[type="submit"] {
+  background-color: #00a3ff;
+  border-radius: 9px;
+  border: none;
+  color: #ffffff;
+  font: 21px/25px "Roboto-Bold";
+  height: 60px;
+  margin: 10px 0 40px 0;
+  width: 100%;
+}
+body #container #form_section p {
+  color: #6d7186;
+  font: 17.5px/21px "Roboto-Regular";
+  text-align: center;
+}
+body #container #form_section a {
+  text-decoration: none;
+  font: 17.5px/21px "Roboto-Regular";
+  color: #00a3ff;
+}
+body #container .logo_container {
+  background: url(/assets/images/right_panel_bg.svg) no-repeat;
+  background-color: #3b3c43;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 75px 51px;
+  width: 205px;
+}
